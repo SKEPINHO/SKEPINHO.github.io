@@ -30,7 +30,7 @@ body {
   }
   
   nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: color 0.2s;
   }
