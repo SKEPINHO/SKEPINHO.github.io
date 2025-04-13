@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     color: #333;
-    background-color: #ff0000;
+    background-color: #ffffff;
   }
   
   /* Hlavička */
@@ -44,7 +44,7 @@ body {
     background-image: url('https://via.placeholder.com/1200x400?text=Styl+a+komfort');
     background-size: cover;
     background-position: center;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 5rem 2rem;
   }
