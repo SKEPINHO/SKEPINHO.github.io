@@ -44,7 +44,7 @@ body {
     background-image: url('https://via.placeholder.com/1200x400?text=Styl+a+komfort');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 5rem 2rem;
   }
