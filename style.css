@@ -129,12 +129,11 @@ body {
 
   .slider {
     position: relative;
-    width: 100%;
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 3rem auto;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   }
   
   .slide {
@@ -150,39 +149,52 @@ body {
     display: block;
   }
   
+  /* Šipky – zobrazí se jen při hoveru */
   .nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.4);
     color: white;
     border: none;
-    cursor: pointer;
     padding: 0.5rem 1rem;
-    z-index: 10;
+    cursor: pointer;
     border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
   }
   
-  .nav.prev { left: 10px; }
-  .nav.next { right: 10px; }
+  .slider:hover .nav {
+    opacity: 1;
+  }
+  
+  .nav.prev {
+    left: 20px;
+  }
+  
+  .nav.next {
+    right: 20px;
+  }
   
   .dots {
     text-align: center;
-    padding: 1rem;
+    margin: 1rem 0;
   }
   
   .dot {
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 0 5px;
-    background-color: #bbb;
+    background-color: #ccc;
     border-radius: 50%;
+    margin: 0 6px;
     cursor: pointer;
   }
   
   .dot.active {
     background-color: #333;
   }
+  
   

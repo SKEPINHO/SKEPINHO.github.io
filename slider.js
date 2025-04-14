@@ -1,7 +1,7 @@
 const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
-const dots = document.querySelectorAll('.dot');
 let index = 0;
 
 function showSlide(i) {
@@ -31,5 +31,5 @@ dots.forEach(dot => {
   });
 });
 
-// Auto slide každých 5 sekund
 setInterval(nextSlide, 5000);
+
