@@ -106,4 +106,20 @@ body {
     max-width: 1200px;
     border-radius: 8px;
   }
+
+  .image-banner {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .image-banner img {
+    max-width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
   
