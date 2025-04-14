@@ -149,7 +149,7 @@ body {
     display: block;
   }
   
-  /* Šipky – zobrazí se jen při hoveru */
+  /* Šipky */
   .nav {
     position: absolute;
     top: 50%;

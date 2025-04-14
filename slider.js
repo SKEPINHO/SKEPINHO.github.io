@@ -26,7 +26,7 @@ dots.forEach(dot => {
   });
 });
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 7000);
 
 if (idx === i) {
     slide.classList.add('active');
