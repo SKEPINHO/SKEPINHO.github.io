@@ -27,17 +27,23 @@
   </section>
 
   <section class="slider">
-    <div class="slides">
-      <img src="JS50.png" alt="Jarní výprodej" class="slide active">
-      <img src="LTK.png" alt="Letní kolekce" class="slide">
+    <div class="slide active">
+      <img src="JS50.png" alt="Jarní výprodej">
     </div>
+    <div class="slide">
+      <img src="LTK.png" alt="Letní kolekce">
+    </div>
+
     <button class="nav prev">&#10094;</button>
     <button class="nav next">&#10095;</button>
+
     <div class="dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
     </div>
   </section>
+
+  <script src="slider.js"></script>
   
    <section class="intro">
     <h2>O značce MódaStyl</h2>
@@ -54,57 +60,7 @@
 
 
 
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-    const nextBtn = document.querySelector('.next');
-    const prevBtn = document.querySelector('.prev');
-    const slideContainer = document.querySelector('.slider');
-  
-    let current = 0;
-  
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-        dots[i].classList.toggle('active', i === index);
-      });
-    }
-  
-    function nextSlide() {
-      current = (current + 1) % slides.length;
-      showSlide(current);
-    }
-  
-    function prevSlide() {
-      current = (current - 1 + slides.length) % slides.length;
-      showSlide(current);
-    }
-  
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-  
-    dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => {
-        current = i;
-        showSlide(current);
-      });
-    });
-  
-    // Automatické přepínání každých 5 sekund
-    setInterval(nextSlide, 5000);
-  
-    // Swipe na mobilu
-    let startX = 0;
-    slideContainer.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-    });
-  
-    slideContainer.addEventListener('touchend', (e) => {
-      let endX = e.changedTouches[0].clientX;
-      if (startX - endX > 50) nextSlide();
-      else if (endX - startX > 50) prevSlide();
-    });
-  </script>
+
   
 
 </body>
