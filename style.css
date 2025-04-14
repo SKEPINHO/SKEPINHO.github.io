@@ -126,5 +126,77 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    transition: opacity 0.6s ease-in-out;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .nav.prev {
+    left: 10px;
+  }
+  
+  .nav.next {
+    right: 10px;
+  }
+  
+  .nav:hover {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Tečky pod sliderem */
+  .dots {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #555;
+  }
   
   
