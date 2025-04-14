@@ -98,29 +98,12 @@ body {
     font-size: 0.9rem;
   }
 
-  .banner {
-    background-color: #ffe8e0;
-    color: #b02e0c;
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 1.1rem;
-    border-top: 3px solid #ffb199;
-    border-bottom: 3px solid #ffb199;
-  }
-  
-  .btn-small {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #b02e0c;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .btn-small:hover {
-    background-color: #8a2100;
+  .image-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 8px;
   }
   
