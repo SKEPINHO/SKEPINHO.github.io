@@ -39,3 +39,17 @@ if (idx === i) {
     slide.classList.remove('active');
   }
   
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      if (idx === i) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+  
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === i);
+    });
+  }
+   
