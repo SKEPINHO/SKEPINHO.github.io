@@ -33,3 +33,9 @@ dots.forEach(dot => {
 
 setInterval(nextSlide, 5000);
 
+if (idx === i) {
+    slide.classList.add('active');
+  } else {
+    slide.classList.remove('active');
+  }
+  

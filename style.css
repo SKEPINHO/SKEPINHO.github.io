@@ -197,4 +197,18 @@ body {
     background-color: #333;
   }
   
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .slide.active {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+  }
   
