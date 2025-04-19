@@ -41,10 +41,20 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.kontakt-text {
-  text-align: center;
-  padding: 5rem 2rem;
+.kontakt-sekce {
   background-color: #f2f2f2;
+  padding-top: 80px;
+  padding-bottom: 80px;
   min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+}
+
+.kontakt-radek {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.1rem;
 }
