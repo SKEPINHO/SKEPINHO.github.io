@@ -1,4 +1,4 @@
-/* HLAVIČKA */
+/* HLAVIČKA S LOGEM A ODKAZY */
 .header {
   background-color: #222;
   position: sticky;
@@ -7,30 +7,39 @@
   z-index: 999;
 }
 
-.navbar {
+.nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-list {
+.logo a {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-list {
   display: flex;
-  justify-content: center;
   list-style: none;
   gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
-.nav-list a {
+.navbar .nav-list a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.nav-list a:hover,
-.nav-list a.active {
+.navbar .nav-list a:hover,
+.navbar .nav-list a.active {
   color: #f39c12;
 }
 
@@ -42,10 +51,10 @@
   max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 .kontakt h2 {
-  text-align: center;
   font-size: 2rem;
   color: #333;
   margin-bottom: 2rem;
@@ -55,6 +64,9 @@
   font-size: 1.1rem;
   line-height: 1.8;
   color: #444;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .kontakt-info p {
