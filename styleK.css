@@ -1,11 +1,17 @@
 /* Hlavička */
 .navbar {
-  background-color: #dadada;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    z-index: 1000;
+    display: flex;
+  }
 
 .navbar ul {
   list-style: none;
