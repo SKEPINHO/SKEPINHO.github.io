@@ -1,0 +1,54 @@
+/* Hlavička */
+.navbar {
+  background-color: #222;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+/* Sekce Kontakt */
+.kontakt {
+  background-color: #f9f9f9;
+  padding: 3rem 2rem;
+  margin: 4rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.kontakt h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.kontakt-info {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.kontakt-info p {
+  margin: 0.5rem 0;
+}
