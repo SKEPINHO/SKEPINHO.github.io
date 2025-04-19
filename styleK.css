@@ -35,19 +35,21 @@ nav a.active {
   color: #ccc;
 }
 
-/* Tělo stránky */
+/* Tělo */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Vystředění kontaktu */
+/* Kontakt */
 .kontakt-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 80px); /* zohlední výšku hlavičky */
+  padding: 5rem 2rem; /* rovnoměrné odsazení */
   background-color: #f2f2f2;
+  min-height: calc(100vh - 80px); /* výška minus hlavička */
+  box-sizing: border-box;
 }
 
 .kontakt-box {
