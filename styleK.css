@@ -1,44 +1,42 @@
-/* Hlavička */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    color: white;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    background-color: #000000;
-    z-index: 1000;
-    display: flex;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  
-  nav a:hover {
-    color: #ccc;
-  }
+/* HLAVIČKA */
+.header {
+  background-color: #222;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 
-/* Sekce Kontakt */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  color: #f39c12;
+}
+
+/* SEKCE KONTAKT */
 .kontakt {
-  background-color: #dadada;
+  background-color: #f9f9f9;
   padding: 3rem 2rem;
   margin: 4rem auto;
   max-width: 800px;
