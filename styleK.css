@@ -39,17 +39,14 @@ nav a.active {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Kontakt – vystředění */
-main.kontakt-page {
-  flex: 1;
+/* Vystředění kontaktu */
+.kontakt-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 80px); /* zohlední výšku hlavičky */
   background-color: #f2f2f2;
 }
 
