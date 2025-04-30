@@ -1,0 +1,217 @@
+/* Základní styl */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background-color: #dadada;
+  }
+
+  /* Hlavička */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    z-index: 1000;
+    display: flex;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  nav a:hover {
+    color: #ccc;
+  }
+
+  /* Hero sekce */
+  .hero {
+    background-image: url('https://via.placeholder.com/1200x400?text=Styl+a+komfort');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    background-color: white;
+    color: #111;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #ddd;
+  }
+
+  /* Intro sekce */
+  .intro {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Patička */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    font-size: 0.9rem; }
+   
+    .slider {
+      position: relative;
+      max-width: 1200px;
+      margin: 3rem auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+   
+    .slide {
+      display: none;
+    }
+   
+    .slide.active {
+      display: block;
+    }
+   
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+   
+    /* Šipky */
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background-color: rgba(0,0,0,0.4);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 10;
+    }
+   
+    .slider:hover .nav {
+      opacity: 1;
+    }
+   
+     .nav.prev {
+       left: 20px;
+   }
+  
+   .nav.next {
+      right: 20px;
+    }
+  
+    .dots {
+      text-align: center;
+      margin: 1rem 0;
+   }
+  
+   .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin: 0 6px;
+      cursor: pointer;
+    }
+  
+   .dot.active {
+      background-color: #333;
+    }
+  
+   .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+   
+   .slide.active {
+      position: relative;
+      opacity: 1;
+      z-index: 1;
+    }
+  
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 3rem auto;
+      height: auto;
+      overflow: hidden;
+    }
+  
+   .slide {
+     position: absolute;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+   
+    .slide img {
+     width: 100%;
+      display: block;
+    }
+  
+   .slide.active {
+     opacity: 1;
+    z-index: 1;
+    }
