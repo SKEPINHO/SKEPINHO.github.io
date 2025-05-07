@@ -60,3 +60,10 @@ nav a.active {
   max-width: 600px;
   width: 90%;
 }
+
+  /* Patička */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    font-size: 0.9rem; }
