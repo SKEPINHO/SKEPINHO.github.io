@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolekce</title>
+  <link rel="stylesheet" href="styleko.css" />
+</head>
+<body>
+<div class="wrapper">
+     <header>
+     <div class="logo">MódaStyl</div>
+     <nav>
+       <ul>
+         <li><a href="index.html">Domů</a></li>
+         <li><a href="#">O nás</a></li>
+         <li><a href="kolekce.html">Kolekce</a></li>
+         <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="category-nav">
+    <ul>
+      <li><a href="#tricka">Trička</a></li>
+      <li><a href="#mikiny">Mikiny</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <aside class="filters">
+      <h3>Filtry</h3>
+      <div class="filter-group">
+        <label for="color">Barva:</label>
+        <select id="color">
+          <option value="">Všechny</option>
+          <option value="červená">Červená</option>
+          <option value="modrá">Modrá</option>
+          <option value="černá">Černá</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="size">Velikost:</label>
+        <select id="size">
+          <option value="">Všechny</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="gender">Pohlaví:</label>
+        <select id="gender">
+          <option value="">Všechny</option>
+          <option value="muži">Muži</option>
+          <option value="ženy">Ženy</option>
+        </select>
+      </div>
+    </aside>
+
+    <section class="products">
+      <div class="product" data-color="červená" data-size="M" data-gender="muži">
+        <img src="trickocMm.jpg" alt="Tričko 1" />
+        <h4>Tričko Červené M</h4>
+        <p>500 Kč</p>
+      </div>
+      <div class="product" data-color="modrá" data-size="L" data-gender="ženy">
+        <img src="obrazky/tricko2.jpg" alt="Tričko 2" />
+        <h4>Tričko Modré L</h4>
+        <p>500 Kč</p>
+      </div>
+      <div class="product" data-color="černá" data-size="S" data-gender="Všechny">
+        <img src="obrazky/mikina1.jpg" alt="Mikina 1" />
+        <h4>Mikina Černá S</h4>
+        <p>800 Kč</p>
+      </div>
+      <!-- Další produkty -->
+    </section>
+  </main>
+
+  <script src="sliderko.js"></script>
+
+</div>
+<footer>
+    <p>&copy; 2025 MódaStyl. Vyrobeno s láskou k módě.</p>
+</footer>
+
+</body>
+</html>
